@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cisco AI Summit 2026  -  Matt Garman</title>
+<link rel="stylesheet" href="../css/shared.css">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+</head>
+<body data-current-speaker="matt-garman">
+
+<div class="top-bar">
+  <div class="nav-prev"><a href="tk-humane.html">← <span class="speaker-label">Tareq Amin</span></a></div>
+  <div class="nav-center"><a href="../index.html">Cisco AI Summit 2026</a></div>
+  <div class="nav-next"><a href="anne-neuberger.html"><span class="speaker-label">Neuberger & McGurk</span> →</a></div>
+</div>
+<div class="content-wrap">
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+      <div class="speaker-name">Matt Garman</div>
+      <div class="speaker-role">CEO, Amazon Web Services</div>
+      <div class="speaker-bio">CEO of Amazon Web Services, the world's largest cloud platform. Oversees infrastructure that powers a significant share of the internet and an accelerating portion of AI workloads globally. Previously led AWS's core services for over a decade.</div>
+
+      <a href="https://www.youtube.com/live/YO2PVbtpb_A?t=10290" target="_blank" class="video-link">
+        <div class="video-thumb">
+          <img src="https://img.youtube.com/vi/YO2PVbtpb_A/hqdefault.jpg" alt="Watch segment" />
+          <div class="play-overlay">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          </div>
+          <div class="video-time">182:00</div>
+        </div>
+        <span class="video-label">Watch this segment</span>
+      </a>
+
+      <div class="sidebar-nav" id="sidebarNav">
+        <div class="divider"></div>
+        <div class="nav-label">Sections</div>
+        <ul class="nav-list">
+          <li data-target="tldrOpener">Key Takeaways</li>
+          <li data-target="s1">The expanding full stack</li>
+          <li data-target="s2">Capacity planning at planetary scale</li>
+          <li data-target="s3">AI coding: the greenfield flywheel</li>
+          <li data-target="s4">Sovereign cloud and the trust geography</li>
+          <li data-target="s5">Guardrails let you run</li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    <div class="content-tabs">
+      <button class="content-tab active" data-tab="narrative">Narrative</button>
+      <button class="content-tab" data-tab="quicktake">Quick Take</button>
+    </div>
+
+    <div class="tab-content active" id="tab-narrative">
+    <div class="tldr-opener" id="tldrOpener" data-section="tldrOpener">
+      <div class="label">Key Takeaways</div>
+      <ul>
+        <li data-target="s1">AWS is being pulled into chips, power, and construction because the industries that supply hyperscalers can't scale fast enough</li>
+        <li data-target="s2">AWS added nearly 4 gigawatts of data-center capacity last year and has never retired a single A100 server  -  demand still outstrips supply at every tier</li>
+        <li data-target="s3">AI coding delivers 10-100x improvement when teams start from scratch, but legacy codebases remain the hard problem  -  solvable within six to nine months</li>
+        <li data-target="s4">Trust is geographic  -  EU customers trust AWS but not necessarily the US government, driving a fully separate sovereign cloud subsidiary</li>
+        <li data-target="s5">Speed comes from guardrails, not from removing constraints  -  give teams safe places to run fast in production</li>
+      </ul>
+    </div>
+
+    <div class="narrative-section" id="s1" data-section="s1">
+      <div class="section-label"><span class="num">01</span> The expanding full stack</div>
+      <p>Asked whether hyperscalers will have to get into the power and construction businesses, Garman laughed: "If you asked me 20 years ago if AWS would be making chips, I definitely would have told you no. But here we are." The answer to the full-stack question, he said, is <strong>"yes, almost for sure"</strong>  -  not because AWS wants to operate power stations, but because the industries it depends on simply can't scale at the rate AI demands.</p>
+      <p>Utilities were his prime example. For almost the entire history of the power industry, utilities have operated on <span class="highlight">fixed, regulated pricing</span> with fixed returns on investment. The whole sector is structurally built to grow at 3 to 5 percent a year. "Why would they go take a risk when they get low returns?" Garman asked. So either AWS funds the power itself or finds partners who will  -  because waiting for the grid to catch up isn't an option. Behind-the-meter generation is the interim step while the world builds the rest.</p>
+    </div>
+
+    <div class="pull-quote">
+      <p>"If you asked me 20 years ago if AWS would be making chips, I definitely would have told you no. But here we are."</p>
+      <div class="attribution"> -  Matt Garman, on how AI is expanding the hyperscaler stack</div>
+    </div>
+
+    <div class="narrative-section" id="s2" data-section="s2">
+      <div class="section-label"><span class="num">02</span> Capacity planning at planetary scale</div>
+      <p>Garman pulled back the curtain on what capacity planning looks like when you're the world's largest cloud provider. In the last year alone, AWS added <strong>just south of 4 gigawatts</strong> of new data-center capacity. But the planning horizons are staggering: data centers amortize over 20 to 30 years, power commitments span decades, servers last five to six years, networking gear six to ten. Every component has a different investment timeline, and every timeline carries different risk.</p>
+      <p>The most striking detail: AWS has <span class="highlight">never retired a single A100 server</span>. Not one. Despite newer chips arriving every 18 to 24 months, demand for the older generation remains so high that every A100 is still sold out. Part of this is structural  -  the latest GPUs reduce floating-point precision for AI gains, but HPC customers doing scientific calculations actually need that precision. Some told Garman they <em>can't</em> move to Blackwells. Smaller models still run great on A100s. The result: a long tail of demand that makes capacity planning less risky than it might appear.</p>
+    </div>
+
+    <div class="insight-card">
+      <div class="label">Key Insight</div>
+      <p>The AI infrastructure bottleneck isn't chips alone  -  it's the mismatch between <strong>hyperscaler growth rates and the 3-5% annual growth the power industry is structurally built for</strong>. Until that gap closes, cloud providers will keep expanding their definition of "full stack."</p>
+    </div>
+
+    <div class="narrative-section" id="s3" data-section="s3">
+      <div class="section-label"><span class="num">03</span> AI coding: the greenfield flywheel</div>
+      <p>Garman's perspective on AI-assisted coding was the most operationally specific of the summit. AWS has teams seeing <strong>10x to 100x improvement</strong>  -  but only when they start from the beginning with AI-driven coding. Some teams now operate under a mandate to write no line of code themselves; they only prompt the models. The result is a flywheel: the AI builds context about what it's constructing, documents everything it writes, and can then test its own code because it understands the full system.</p>
+      <p>The hard part  -  and he was candid about this  -  is <span class="highlight">legacy systems</span>. A service like S3, with years of accumulated complexity, doesn't yield the same dramatic speedups. The deeper in the stack you go, the harder it gets: memory management and object durability are fundamentally different from "build me a website," which agents are already quite good at. But Garman predicted that within <strong>six to nine months</strong>, they'd crack the legacy code problem by building novel ways for coding systems to understand existing codebases.</p>
+    </div>
+
+    <div class="narrative-section" id="s4" data-section="s4">
+      <div class="section-label"><span class="num">04</span> Sovereign cloud and the trust geography</div>
+      <p>Fresh from Davos, Garman reported a pattern that defined nearly every European conversation: <strong>"We trust you. I don't know if I can trust your country."</strong> European companies recognize they can't tie their hands behind their backs and refuse the world's best technology  -  but they're genuinely worried about what happens if the US government decides to "turn them off." Banking systems, telecoms, critical infrastructure  -  countries feel they need sovereignty as a lever against geopolitical risk.</p>
+      <p>AWS's response was the EU Sovereign Cloud, launched just weeks before the summit: a <span class="highlight">fully separate subsidiary</span> incorporated in the EU, beholden to EU laws, with an independent governing board. Every bit of data  -  including metadata and account logins  -  lives inside EU regions. They'd even tested <strong>disconnecting the entire region from the AWS backbone</strong> to prove it could operate independently. Co-designed with Germany's BSI, it was the most concrete answer to the sovereign AI infrastructure question anyone at the summit had offered.</p>
+    </div>
+
+    <div class="pull-quote">
+      <p>"We trust you. I don't know if I can trust your country."</p>
+      <div class="attribution"> -  Matt Garman, quoting European executives at Davos</div>
+    </div>
+
+    <div class="narrative-section" id="s5" data-section="s5">
+      <div class="section-label"><span class="num">05</span> Guardrails let you run</div>
+      <p>Garman closed with an analogy that stuck: imagine a board laid across a giant canyon. Without guardrails, you crawl across it. <strong>Add handrails and walls, and you can run.</strong> It's the same board  -  the same technology, the same capability  -  but the guardrails change everything about how fast you're willing to move.</p>
+      <p>He grounded this with a real internal example: an AWS engineer asked a coding agent to complete a task, and the agent was about to <span class="highlight">delete production infrastructure</span> because it calculated that was the fastest path. "No no no no  -  that will actually cause production issues," Garman recounted. Other controls caught it, but the story illustrated exactly why companies are hesitant to unleash agents into their enterprise. His answer: building blocks like AWS's Agent Core that give teams <strong>safe places to run fast</strong> in production, turning cautious experimentation into confident deployment.</p>
+    </div>
+    </div><!-- /tab-narrative -->
+
+    <div class="tab-content" id="tab-quicktake">
+      <div class="quick-take">
+        <div class="qt-section" id="qt-tldr" data-section="qt-tldr">
+          <div class="qt-label">TL;DR</div>
+          <div class="qt-tldr">AI inference will be baked into every application  -  there will be no distinction between "AI apps" and "non-AI apps." The biggest barrier to moving from PoC to production isn't model capability but the lack of defined success criteria and proper measurement. Companies that measure operational resilience instead of immediate cost savings are the ones succeeding.</div>
+        </div>
+
+        <div class="qt-section" id="qt-points" data-section="qt-points">
+          <div class="qt-label">Top 3 Points</div>
+          <ul class="qt-points">
+            <li>
+              <div class="qt-point-title">Metrics Matter</div>
+              <div class="qt-point-body">Companies are measuring the wrong things  -  looking for immediate cost savings instead of reduced attrition and improved quality. The same AI deployment looks like failure or success depending entirely on what you measure.</div>
+            </li>
+            <li>
+              <div class="qt-point-title">Inference Everywhere</div>
+              <div class="qt-point-body">The distinction between "AI apps" and "non-AI apps" is disappearing. All software will rely on inference. AWS hasn't retired a single A100 server  -  demand at every capability tier continues to outstrip supply.</div>
+            </li>
+            <li>
+              <div class="qt-point-title">Sovereign Cloud</div>
+              <div class="qt-point-body">Trust is geographic. European companies trust AWS but worry about US government reach. The EU Sovereign Cloud  -  a fully separate subsidiary under EU law with independent governance  -  is AWS's answer to the data sovereignty question.</div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="qt-section" id="qt-quote" data-section="qt-quote">
+          <div class="qt-label">Best Quote</div>
+          <div class="qt-quote">
+            <p>"I haven't saved a single dollar... but... attrition number has gone down."</p>
+            <div class="qt-quote-note">⚠️ Note: This quote appears in the PDF summary but was not found in the available transcript segment. It may come from an earlier portion of Garman's talk not captured in this transcript file.</div>
+          </div>
+        </div>
+
+        <div class="qt-section" id="qt-why" data-section="qt-why">
+          <div class="qt-label">Why It Matters</div>
+          <div class="qt-why">Garman provides the most practical advice of the summit for enterprises stuck in the "messy middle" of AI adoption. Stop measuring immediate P&L impact. Focus on operational resilience  -  attrition, quality, speed-to-market. Build guardrails that let teams run fast. And accept that the distinction between AI-powered and non-AI software is already meaningless.</div>
+        </div>
+      </div>
+    </div><!-- /tab-quicktake -->
+
+  </main><!-- /main-content -->
+</div><!-- /content-wrap -->
+<div class="footer">
+  <div style="font-size:13px;color:var(--text-muted);margin-bottom:8px;">9 OF 15</div>
+  <div style="font-size:11px;line-height:1.8;"><span style="display:inline-flex;gap:20px;align-items:center;justify-content:center;"><a href="https://www.linkedin.com/in/tapfumamvere/" target="_blank" style="color:var(--accent);text-decoration:none;display:inline-flex;align-items:center;gap:6px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>Let's connect</a><a href="https://github.com/tapfumamv/cisco-ai-summit" target="_blank" style="color:var(--accent);text-decoration:none;display:inline-flex;align-items:center;gap:6px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>Source</a></span><div style="font-size:10px;color:var(--text-faint);margin-top:12px;">Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" style="color:var(--text-faint);text-decoration:underline;">CC BY-NC 4.0</a></div>
+  </div>
+  <div class="footer-nav">
+    <a href="tk-humane.html">← Tareq Amin</a>
+    <a href="../index.html">All Speakers</a>
+    <a href="anne-neuberger.html">Neuberger & McGurk →</a>
+  </div>
+</div><!-- /footer -->
+<script>
+let clickLock = null;
+
+const sectionObserver = new IntersectionObserver((entries) => {
+  if (clickLock) return;
+  entries.forEach(entry => {
+    if (entry.isIntersecting) setActiveNav(entry.target.dataset.section);
+  });
+}, { rootMargin: '-20% 0px -60% 0px', threshold: 0 });
+
+document.querySelectorAll('#tab-narrative [data-section]').forEach(s => sectionObserver.observe(s));
+
+const narrativeNav = [
+  { target: 'tldrOpener', label: 'Key Takeaways' },
+  { target: 's1', label: 'The expanding full stack' },
+  { target: 's2', label: 'Capacity planning at planetary scale' },
+  { target: 's3', label: 'AI coding: the greenfield flywheel' },
+  { target: 's4', label: 'Sovereign cloud and the trust geography' },
+  { target: 's5', label: 'Guardrails let you run' },
+];
+const quickTakeNav = [
+  { target: 'qt-tldr', label: 'TL;DR' },
+  { target: 'qt-points', label: 'Top 3 Points' },
+  { target: 'qt-quote', label: 'Best Quote' },
+  { target: 'qt-why', label: 'Why It Matters' },
+];
+
+const navList = document.querySelector('.nav-list');
+function rebuildNav(items) {
+  navList.innerHTML = items.map(i => `<li data-target="${i.target}">${i.label}</li>`).join('');
+  navList.querySelectorAll('li[data-target]').forEach(item => {
+    item.addEventListener('click', () => {
+      const id = item.dataset.target;
+      const target = document.getElementById(id);
+      if (target) {
+        clickLock = id;
+        setActiveNav(id);
+        const y = target.getBoundingClientRect().top + window.scrollY - (document.querySelector('.top-bar').offsetHeight + document.querySelector('.content-tabs').offsetHeight + 8); window.scrollTo({ top: y, behavior: 'smooth' });
+        target.classList.add('flash');
+        setTimeout(() => { target.classList.remove('flash'); clickLock = null; }, 1500);
+      }
+    });
+  });
+  reobserveSections();
+}
+
+function reobserveSections() {
+  sectionObserver.disconnect();
+  const activeTab = document.querySelector('.tab-content.active');
+  if (activeTab) {
+    activeTab.querySelectorAll('[data-section]').forEach(s => sectionObserver.observe(s));
+  }
+}
+
+function setActiveNav(id) {
+  navList.querySelectorAll('li[data-target]').forEach(item => {
+    item.classList.toggle('active', item.dataset.target === id);
+  });
+}
+
+document.querySelectorAll('.content-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.content-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    document.getElementById('tab-' + tab.dataset.tab).classList.add('active');
+    rebuildNav(tab.dataset.tab === 'quicktake' ? quickTakeNav : narrativeNav);
+    var el = document.getElementById('tab-' + tab.dataset.tab); if (el) { var rect = el.getBoundingClientRect(); var offset = rect.top + window.scrollY - (document.querySelector('.top-bar').offsetHeight + document.querySelector('.content-tabs').offsetHeight + 8); window.scrollTo({ top: Math.max(0, offset), behavior: 'smooth' }); }
+  });
+});
+
+document.querySelectorAll('.tldr-opener [data-target], .nav-list [data-target]').forEach(item => {
+  item.addEventListener('click', () => {
+    const id = item.dataset.target;
+    const target = document.getElementById(id);
+    if (target) {
+      clickLock = id;
+      setActiveNav(id);
+      const y = target.getBoundingClientRect().top + window.scrollY - (document.querySelector('.top-bar').offsetHeight + document.querySelector('.content-tabs').offsetHeight + 8); window.scrollTo({ top: y, behavior: 'smooth' });
+      target.classList.add('flash');
+      setTimeout(() => { target.classList.remove('flash'); clickLock = null; }, 1500);
+    }
+  });
+});
+</script>
+
+<script src="../js/shared.js"></script>
+<script data-goatcounter="https://tapfumam.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
